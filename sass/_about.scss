@@ -1,0 +1,126 @@
+.about-us {
+    padding-top: 100px;
+    width: 100%;
+    height: auto;
+
+    &__title {
+        text-align: center;
+        font-weight: 600;
+        font-size: 24px;
+        color: $color-green-dark;
+        margin-bottom: 40px;
+    }
+
+    &__conteiner {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    &__bg {
+        width: 1330px;
+        position: absolute;
+        z-index: -1;
+    }
+
+    &__box {
+        font-size: 18px;
+        width: 710px;
+        padding-top: 355px;
+        padding-left: 340px;
+    }
+
+    &__info {
+        word-spacing: 4px;
+
+        span {
+            font-weight: 600;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 30px auto;
+
+        &_card {
+            width: 350px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 50px;
+                height: 50px;
+                margin-right: 10px;
+            }
+        }   
+    }
+
+    .team {
+        margin: 100px auto;
+
+        &__title {
+            text-align: center;
+            font-weight: 600;
+            font-size: 24px;
+            color: $color-green-dark;
+            margin-bottom: 40px;
+        }
+
+        &__conteiner {
+            width: 60%;
+            height: auto;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__cards {
+            width: 300px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__card {
+            
+            &_img {
+                width: 180px;
+                height: 180px;
+            }
+
+            &_name {
+                text-align: center;
+                font-size: 18px;
+                font-weight: 600;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+
+        &__tagline {
+            position: relative;
+            width: 300px;
+            height: 155px;
+            margin-top: 10px;
+            &_img{
+                width: 240px;
+                position: absolute;
+                left: 30px;
+                z-index: -1;
+            } 
+
+            p {
+                padding-top: 50px;
+                text-align: center;
+                white-space: pre-line;
+                color: $color-green-dark;
+                font-family: 'Montserrat Alternates', sans-serif;
+            }
+        }
+    }
+}

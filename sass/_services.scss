@@ -1,0 +1,66 @@
+.services {
+    width: 100%;
+    height: auto;
+    margin: 100px auto;
+    padding-top: 50px;
+
+    &__title {
+        text-align: center;
+        font-weight: 600;
+        font-size: 24px;
+        color: $color-green-dark;
+    }
+
+    &__conteiner {
+        width: 70%;
+        height: auto;
+        margin: 50px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__card {
+        width: 650px;
+        height: auto;
+        display: flex;
+        box-sizing: border-box;
+        padding: 10px;
+
+        &:hover {
+            box-shadow: 0 4px 16px $color-soft-orange;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        &_img {
+            width: 300px;
+            min-width: 300px;
+            height: 175px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &_info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            &-title {
+                font-size: 18px;
+                font-weight: 500;
+                margin: 15px 5px;
+            }
+
+            &-info {
+                margin: 5px;
+                word-spacing: 4px;
+            }
+        }
+    }
+}
